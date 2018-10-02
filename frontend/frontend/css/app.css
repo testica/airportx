@@ -527,3 +527,13 @@ code {
 #tab-3 .demo-card-header-pic .card-header h2 {
   margin-top: 48px;
 }
+
+.md .navbar+.toolbar.tabbar-labels:not(.toolbar-bottom-md)~* .page-content, .md .navbar+.toolbar.tabbar-labels:not(.toolbar-bottom-md)~.page-content {
+  padding-top: 70px;
+}
+
+
+.md .toolbar.messagebar {
+  position: absolute;
+  background: #ffffff;
+}
