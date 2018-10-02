@@ -18,4 +18,11 @@ app.post('/facebook-auth', function (req, res) {
 //   }).then(response => res.send(response));
 // });
 
+app.get('/bbva-login', function (req, res) {
+  //res.send('hello BBVA')
+  console.log('Login BBVA - redirigiendo');
+  return res.redirect('https://connect.bbva.com/sandboxconnect?client_id=app.bbva.air.exp&response_type=code&redirect_uri=https://airportx-hackathon.firebaseapp.com');
+})
+
+
 app.listen(3000);
