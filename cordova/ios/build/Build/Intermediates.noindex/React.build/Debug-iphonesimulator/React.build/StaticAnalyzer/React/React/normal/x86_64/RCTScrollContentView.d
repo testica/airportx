@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.m \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/RCTView.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/Gusy/AirportExperience/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/Gusy/AirportExperience/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/ScrollView/RCTScrollView.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/Gusy/AirportExperience/node_modules/react-native/React/Views/ScrollView/RCTScrollableProtocol.h
