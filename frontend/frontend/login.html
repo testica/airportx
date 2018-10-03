@@ -10,85 +10,72 @@
   <title>Framework7</title>
   <link rel="stylesheet" href="js/framework7/css/framework7.min.css">
   <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
   <!-- update the version number as needed -->
-  
   <script defer src="/__/firebase/5.5.2/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
   <script defer src="/__/firebase/5.5.2/firebase-auth.js"></script>
   <script defer src="/__/firebase/5.5.2/firebase-database.js"></script>
   <script defer src="/__/firebase/5.5.2/firebase-messaging.js"></script>
   <script defer src="/__/firebase/5.5.2/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
-  
-  <!-- Cordova Script Tag over here -->
-  <!-- <script type="text/javascript" src="cordova.js"></script> -->
 </head>
 <body>
   <div id="app">
     <div class="view view-main view-init ios-edges" data-url="/">
       <div class="page">
-        <div class="page-content login-screen-content">
-            <div class="login-screen-title">
-              <img src="assets/logo.png" />
+          <div class="page-content login-screen-content">
+              <div class="login-screen-title">Airport Experience</div>
+              <form>
+                <div class="list">
+                  <ul>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Username</div>
+                        <div class="item-input-wrap">
+                          <input type="text" name="username" id="demo-username-1" placeholder="Your username">
+                          <span class="input-clear-button"></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item-content item-input">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Password</div>
+                        <div class="item-input-wrap">
+                          <input type="password" name="password" id="demo-password-1" placeholder="Your password">
+                          <span class="input-clear-button"></span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <ul>
+                    <li><a href="#" class="item-link list-button" @click="signIn">Sign In</a></li>
+                    <li><a href="https://connect.bbva.com/sandboxconnect?client_id=app.bbva.air.exp&response_type=code&redirect_uri=https://airportx-hackathon.firebaseapp.com/inner_app.html" class="item-link list-button">Sign In with BBVA Connect</a></li>
+                    
+                  </ul>
+                  
+                </div>
+              </form>
             </div>
-            <form>
-              <div class="list">
-                <ul>
-                  <li class="item-content item-input">
-                    <div class="item-inner">
-                      <div class="item-title item-label">Username</div>
-                      <div class="item-input-wrap">
-                        <input type="text" name="username" id="username" placeholder="Your username">
-                        <span class="input-clear-button"></span>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="item-content item-input">
-                    <div class="item-inner">
-                      <div class="item-title item-label">Password</div>
-                      <div class="item-input-wrap">
-                        <input type="password" name="password" id="password" placeholder="Your password">
-                        <span class="input-clear-button"></span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="list buttons">
-                <ul>
-                  <li><a href="#" class="item-link list-button" onClick="signIn()">Sign In</a></li>
-                  <li>
-                    <a class="external item-link list-button bbva-btn" href="https://connect.bbva.com/sandboxconnect?client_id=app.bbva.air.exp&response_type=code&redirect_uri=https://airportx-hackathon.firebaseapp.com/app.html" class="item-link list-button">
-                      Sign In with BBVA Connect
-                    </a>
-                  </li>  
-                  <li>
-                      <a class="external item-link list-button facebook-btn" href="https://connect.bbva.com/sandboxconnect?client_id=app.bbva.air.exp&response_type=code&redirect_uri=https://airportx-hackathon.firebaseapp.com/app.html" class="item-link list-button">
-                        Sign In with Facebook
-                      </a>
-                    </li>  
-                </ul>                
-              </div>
-            </form>
-          </div>
       </div>
     </div>
   </div>
-  
+  <script>
+      return {
+        methods: {
+          toggleToolbarPosition: function () {
+            this.$el.find('.toolbar, .tabbar').toggleClass('toolbar-bottom-md');
+          },
+        }
+      }
+    </script>
   <script src="js/framework7/js/framework7.min.js"></script>
   <script src="js/routes.js"></script>
   <script src="js/app.js"></script>
-  <script>
-    function signIn() {
-      var username = $('#username').val();
-      var password = $('#password').val();
-      if (username != "" && password != ""){
-        location.href = "app.html";
-      } else {
-        app.dialog.alert("Los datos introducidos no son correctos", "Error de login");
-      }
-    }
-    </script>
-  
   <!-- FACEBOOK SDK -->
   <script>
       // window.fbAsyncInit = function() {
@@ -118,7 +105,6 @@
       //   }
       </script>
       <script>
-        /*
         document.addEventListener('DOMContentLoaded', function() {
           // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
           // // The Firebase SDK is initialized and available here!
@@ -137,7 +123,6 @@
             console.error(e);
           }
         });
-        */
       </script>
 </body>
 </html>

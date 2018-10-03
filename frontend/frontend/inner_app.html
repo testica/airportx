@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Framework7</title>
+  <link rel="stylesheet" href="js/framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+  <link rel="icon" href="img/f7-icon.png">
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/5.5.2/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/5.5.2/firebase-auth.js"></script>
+  <script defer src="/__/firebase/5.5.2/firebase-database.js"></script>
+  <script defer src="/__/firebase/5.5.2/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/5.5.2/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="view view-main view-init ios-edges" data-url="/">
+      <div class="page">
+          <div class="navbar">
+            <div class="navbar-inner sliding">
+              <div class="left">
+                  <a class="link">
+                      <i class="f7-icons">bars</i>
+                    </a>
+                </div>
+              <div class="title">Heathrow airport</div>
+              <div class="right md-only">
+                
+              </div>
+            </div>
+          </div>
+          <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+              <a href="#tab-1" class="tab-link tab-link-active">
+                <i class="f7-icons">ticket</i>
+                <span class="tabbar-label">Coupons</span>
+              </a>
+              <a href="#tab-2" class="tab-link">
+                <i class="f7-icons">chats</i>
+                <span class="tabbar-label">Connect</span>
+              </a>
+              <a href="#tab-3" class="tab-link">
+                <i class="f7-icons">flag</i>
+                <span class="tabbar-label">Games</span>
+              </a>
+            </div>
+          </div>
+          <div class="tabs">
+            <div id="tab-1" class="page-content tab tab-active">
+              
+                 <div class="card demo-card-header-pic">
+                    <div style="background-image:url('assets/coupons/Bolsas.jpg')" valign="bottom" class="card-header">
+                       <h2>Gucci</h2>
+                       <p class="discount">-20%</p>
+                    </div>
+                 </div>
+                 <div class="card demo-card-header-pic">
+                    <div style="background-image:url('assets/coupons/Drinks.jpg')" valign="bottom" class="card-header">
+                       <h2>Seafood Bar</h2>
+                       <p class="discount">2x1</p>
+                    </div>
+                 </div>
+                 <div class="card demo-card-header-pic">
+                    <div style="background-image:url('assets/coupons/Pizza.jpeg')" valign="bottom" class="card-header">
+                       <h2>Fortnum & Mason Bar</h2>
+                       <p class="discount">10$</p>
+                    </div>
+                 </div>
+                 <div class="card demo-card-header-pic">
+                    <div style="background-image:url('assets/coupons/Souvenirs.jpg')" valign="bottom" class="card-header">
+                       <h2>Carluccio's</h2>
+                       <p class="discount">-15%</p>
+                    </div>
+                 </div>
+                 <div class="card demo-card-header-pic">
+                    <div style="background-image:url('assets/coupons/uk_hamburger.jpg')" valign="bottom" class="card-header">
+                       <h2>EAT</h2>
+                       <p class="discount">2x1</p>
+                    </div>
+                 </div>
+              
+            </div>
+            <div id="tab-2" class="page-content tab">
+                <div class="page-content messages-content">
+                    <div class="messages">
+                      <div class="messages-title"><b>Sunday, Feb 9,</b> 12:58</div>
+                      <div class="message message-sent">
+                        <div class="message-content">
+                          <div class="message-bubble">
+                            <div class="message-text">Hi, Kate</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message message-sent">
+                        <div class="message-content">
+                          <div class="message-bubble">
+                            <div class="message-text">How are you?</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message message-received">
+                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/9)"></div>
+                        <div class="message-content">
+                          <div class="message-name">Kate</div>
+                          <div class="message-bubble">
+                            <div class="message-text">Hi, I am good!</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message message-received">
+                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/7)"></div>
+                        <div class="message-content">
+                          <div class="message-name">Blue Ninja</div>
+                          <div class="message-bubble">
+                            <div class="message-text">Hi there, I am also fine, thanks! And how are you?</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message message-sent">
+                        <div class="message-content">
+                          <div class="message-bubble">
+                            <div class="message-text">Hey, Blue Ninja! Glad to see you ;)</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message message-sent">
+                        <div class="message-content">
+                          <div class="message-bubble">
+                            <div class="message-text">Hey, look, cutest kitten ever!</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message message-received">
+                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/9)"></div>
+                        <div class="message-content">
+                          <div class="message-name">Kate</div>
+                          <div class="message-bubble">
+                            <div class="message-text">Nice!</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message message-received">
+                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/9)"></div>
+                        <div class="message-content">
+                          <div class="message-name">Kate</div>
+                          <div class="message-bubble">
+                            <div class="message-text">Like it very much!</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message message-received">
+                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/7)"></div>
+                        <div class="message-content">
+                          <div class="message-name">Blue Ninja</div>
+                          <div class="message-bubble">
+                            <div class="message-text">Awesome!</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div id="tab-3" class="page-content tab">
+           
+                  <div class="card demo-card-header-pic">
+                      <div style="background-image:url('assets/games/Brand_airpor MKT_2.jpg')" valign="bottom" class="card-header">
+                         <h2>Jumping Challenge</h2>
+                      </div>
+                   </div>
+                   <div class="card demo-card-header-pic">
+                      <div style="background-image:url('assets/games/Brand_airpor MKT_3.jpg')" valign="bottom" class="card-header">
+                         <h2>Search the treasure</h2>
+                      </div>
+                   </div>
+                   <div class="card demo-card-header-pic">
+                      <div style="background-image:url('assets/games/Brand_airpor MKT_4.jpg')" valign="bottom" class="card-header">
+                         <h2>Funny picture</h2>
+                      </div>
+                   </div>
+                   <div class="card demo-card-header-pic">
+                      <div style="background-image:url('assets/games/Brand_airpor MKT.jpg')" valign="bottom" class="card-header">
+                         <h2>Boomerang story</h2>
+                      </div>
+                   </div>
+                   <div class="card demo-card-header-pic">
+                      <div style="background-image:url('assets/games/Fotomaton.jpg')" valign="bottom" class="card-header">
+                         <h2>Picture with us</h2>
+                      </div>
+                   </div>
+            
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script>
+      return {
+        methods: {
+          toggleToolbarPosition: function () {
+            this.$el.find('.toolbar, .tabbar').toggleClass('toolbar-bottom-md');
+          },
+        }
+      }
+    </script>
+  <script src="js/framework7/js/framework7.min.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+  <!-- FACEBOOK SDK -->
+  <script>
+      // window.fbAsyncInit = function() {
+      //   FB.init({
+      //     appId      : '343219789556793',
+      //     cookie     : true,
+      //     xfbml      : true,
+      //     version    : 'v3.1'
+      //   });
+          
+      //   FB.AppEvents.logPageView();   
+          
+      // };
+      
+      // (function(d, s, id){
+      //     var js, fjs = d.getElementsByTagName(s)[0];
+      //     if (d.getElementById(id)) {return;}
+      //     js = d.createElement(s); js.id = id;
+      //     js.src = "https://connect.facebook.net/en_US/sdk.js";
+      //     fjs.parentNode.insertBefore(js, fjs);
+      //   }(document, 'script', 'facebook-jssdk'));
+  
+      //   function checkLoginState() {
+      //     FB.getLoginStatus(function(response) {
+      //       console.log(response);
+      //     });
+      //   }
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+          // // The Firebase SDK is initialized and available here!
+          //
+          // firebase.auth().onAuthStateChanged(user => { });
+          // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+          // firebase.messaging().requestPermission().then(() => { });
+          // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+          //
+          // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  
+          try {
+            let app = firebase.app();
+            let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          } catch (e) {
+            console.error(e);
+          }
+        });
+      </script>
+</body>
+</html>

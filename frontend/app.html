@@ -12,30 +12,88 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="apple-touch-icon" href="img/f7-icon-square.png">
   <link rel="icon" href="img/f7-icon.png">
-  <!-- update the version number as needed -->
+  
   <script defer src="/__/firebase/5.5.2/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
   <script defer src="/__/firebase/5.5.2/firebase-auth.js"></script>
   <script defer src="/__/firebase/5.5.2/firebase-database.js"></script>
   <script defer src="/__/firebase/5.5.2/firebase-messaging.js"></script>
   <script defer src="/__/firebase/5.5.2/firebase-storage.js"></script>
-  <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
+  
+  <!-- Cordova Script Tag over here -->
+  <!-- <script type="text/javascript" src="cordova.js"></script> -->
 </head>
 <body>
   <div id="app">
+      <div class="panel panel-left panel-cover">
+          <div class="page">
+            <div class="page-content">
+              <div class="block-title airport">
+                <p>Current airport:</p> 
+                <select>
+                  <option>Heathrow</option>
+                  <option>Gatwick</option>
+                  <option>Stansted</option>
+                  <option>Luton</option>
+                  <option>City Airport</option>
+                </select><i class="f7-icons">chevron_down</i>
+              </div>
+              <div class="list links-list">
+                <ul>
+                  <li>
+                    <a href="#" class="panel-close">Arrivals</a>
+                  </li>
+                  <li>
+                    <a href="#" class="panel-close">Departures</a>
+                  </li>
+                  <li>
+                    <a href="#" class="panel-close">Flight connections</a>
+                  </li>
+                  <li>
+                    <a href="#" class="panel-close">Map</a>
+                  </li>
+                  <li>
+                    <a href="#" class="panel-close">Restaurants</a>
+                  </li>
+                  <li>
+                    <a href="#" class="panel-close">Shops</a>
+                  </li><w
+                  <li>
+                    <a href="#" class="panel-close">Wifi</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="block-title">
+                Other
+              </div>
+              <div class="list links-list">
+                <ul>  
+                  <li>
+                    <a href="#" class="panel-close">Help</a>
+                  </li>
+                  <li>
+                    <a href="#" class="panel-close">Settings</a>
+                  </li>
+                </ul>
+              </div>
+             
+            </div>
+          </div>
+        </div>
     <div class="view view-main view-init ios-edges" data-url="/">
       <div class="page">
           <div class="navbar">
             <div class="navbar-inner sliding">
               <div class="left">
-                  <a class="link">
-                      <i class="f7-icons">bars</i>
-                    </a>
+                  <a href="#" class="link icon-only panel-open" data-panel="left">
+                    <i class="f7-icons">bars</i>
+                  </a>
                 </div>
-              <div class="title">Heathrow airport</div>
+              <div class="title">Heathrow</div>
               <div class="right md-only">
-                
+                  <a href="#" class="link icon-only">
+                      <i class="f7-icons">person</i>
+                    </a>
               </div>
             </div>
           </div>
@@ -57,214 +115,269 @@
           </div>
           <div class="tabs">
             <div id="tab-1" class="page-content tab tab-active">
-              
-                 <div class="card demo-card-header-pic">
-                    <div style="background-image:url('assets/coupons/Bolsas.jpg')" valign="bottom" class="card-header">
-                       <h2>Gucci</h2>
-                       <p class="discount">-20%</p>
-                    </div>
-                 </div>
-                 <div class="card demo-card-header-pic">
-                    <div style="background-image:url('assets/coupons/Drinks.jpg')" valign="bottom" class="card-header">
-                       <h2>Seafood Bar</h2>
-                       <p class="discount">2x1</p>
-                    </div>
-                 </div>
-                 <div class="card demo-card-header-pic">
-                    <div style="background-image:url('assets/coupons/Pizza.jpeg')" valign="bottom" class="card-header">
-                       <h2>Fortnum & Mason Bar</h2>
-                       <p class="discount">10$</p>
-                    </div>
-                 </div>
-                 <div class="card demo-card-header-pic">
-                    <div style="background-image:url('assets/coupons/Souvenirs.jpg')" valign="bottom" class="card-header">
-                       <h2>Carluccio's</h2>
-                       <p class="discount">-15%</p>
-                    </div>
-                 </div>
-                 <div class="card demo-card-header-pic">
-                    <div style="background-image:url('assets/coupons/uk_hamburger.jpg')" valign="bottom" class="card-header">
-                       <h2>EAT</h2>
-                       <p class="discount">2x1</p>
-                    </div>
-                 </div>
-              
+              <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/coupons/Bolsas.jpg')" valign="bottom" class="card-header">
+                    <h2>Gucci</h2>
+                    <p class="discount">-20%</p>
+                </div>
+              </div>
+              <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/coupons/Drinks.jpg')" valign="bottom" class="card-header">
+                    <h2>Seafood Bar</h2>
+                    <p class="discount">2x1</p>
+                </div>
+              </div>
+              <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/coupons/Pizza.jpeg')" valign="bottom" class="card-header">
+                    <h2>Fortnum & Mason Bar</h2>
+                    <p class="discount">10$</p>
+                </div>
+              </div>
+              <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/coupons/Souvenirs.jpg')" valign="bottom" class="card-header">
+                    <h2>Carluccio's</h2>
+                    <p class="discount">-15%</p>
+                </div>
+              </div>
+              <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/coupons/uk_hamburger.jpg')" valign="bottom" class="card-header">
+                    <h2>EAT</h2>
+                    <p class="discount">2x1</p>
+                </div>
+              </div>
             </div>
             <div id="tab-2" class="page-content tab">
-                <div class="toolbar messagebar">
-                    <div class="toolbar-inner">
-                      <a class="link icon-only">
-                        
-                        <i class="icon material-icons md-only">camera_alt</i>
-                      </a>
-                      <div class="messagebar-area">
-                        <textarea class="resizable" placeholder="Message"></textarea>
-                      </div>
-                      <a class="link icon-only demo-send-message-link">
-                        
-                        <i class="icon material-icons md-only">send</i>
-                      </a>
-                    </div>
-                    <div class="messagebar-sheet">
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/300/cats/1/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/200/300/cats/2/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/400/300/cats/3/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/150/cats/4/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/150/300/cats/5/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/300/cats/6/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/300/cats/7/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/200/300/cats/8/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/400/300/cats/9/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                      <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/150/cats/10/)">
-                        <input type="checkbox">
-                        <i class="icon icon-checkbox"></i>
-                      </label>
-                      
-                    </div>
+                <div class="list people">
+                    <ul>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-media">
+                            <img class="heightfit" src="assets/chat/Profile2.jpg" />
+                          </div>
+                          <div class="item-inner">
+                            <div class="item-title">
+                              John Smith
+                              <div class="item-footer">Are you for a coffee?</div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-media">
+                              <img class="heightfit" src="assets/chat/no-pic.png" />
+                          </div>
+                          <div class="item-inner">
+                            <div class="item-title">
+                              Paul Johnson 
+                              <div class="item-footer">Im on my way</div>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-media">
+                              <img src="assets/chat/Profile.jpeg" />
+                          </div>
+                          <div class="item-inner">
+                            <div class="item-title">
+                              Helen Graham
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="item-link item-content">
+                          <div class="item-media">
+                              <img class="heightfit" src="assets/chat/no-pic.png" />
+                          </div>
+                          <div class="item-inner">
+                            <div class="item-title">
+                              Hannah Lee
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                <div class="page-content messages-content">
-                    <div class="messages">
-                      <div class="messages-title"><b>Sunday, Feb 9,</b> 12:58</div>
-                      <div class="message message-sent">
-                        <div class="message-content">
-                          <div class="message-bubble">
-                            <div class="message-text">Hi, Kate</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="message message-sent">
-                        <div class="message-content">
-                          <div class="message-bubble">
-                            <div class="message-text">How are you?</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="message message-received">
-                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/9)"></div>
-                        <div class="message-content">
-                          <div class="message-name">Kate</div>
-                          <div class="message-bubble">
-                            <div class="message-text">Hi, I am good!</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="message message-received">
-                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/7)"></div>
-                        <div class="message-content">
-                          <div class="message-name">Blue Ninja</div>
-                          <div class="message-bubble">
-                            <div class="message-text">Hi there, I am also fine, thanks! And how are you?</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="message message-sent">
-                        <div class="message-content">
-                          <div class="message-bubble">
-                            <div class="message-text">Hey, Blue Ninja! Glad to see you ;)</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="message message-sent">
-                        <div class="message-content">
-                          <div class="message-bubble">
-                            <div class="message-text">Hey, look, cutest kitten ever!</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="message message-received">
-                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/9)"></div>
-                        <div class="message-content">
-                          <div class="message-name">Kate</div>
-                          <div class="message-bubble">
-                            <div class="message-text">Nice!</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="message message-received">
-                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/9)"></div>
-                        <div class="message-content">
-                          <div class="message-name">Kate</div>
-                          <div class="message-bubble">
-                            <div class="message-text">Like it very much!</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="message message-received">
-                        <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/7)"></div>
-                        <div class="message-content">
-                          <div class="message-name">Blue Ninja</div>
-                          <div class="message-bubble">
-                            <div class="message-text">Awesome!</div>
-                          </div>
-                        </div>
+                <!--                
+                  <div class="toolbar messagebar">
+                  <div class="toolbar-inner">
+                    <a class="link icon-only">
+                      
+                      <i class="icon material-icons md-only">camera_alt</i>
+                    </a>
+                    <div class="messagebar-area">
+                      <textarea class="resizable" placeholder="Message" id="message-to-send"></textarea>
+                    </div>
+                    <a class="link icon-only" onClick="sendMSG()">
+                      <i class="icon material-icons md-only">send</i>
+                    </a>
+                  </div>
+                  <div class="messagebar-sheet">
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/300/cats/1/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/200/300/cats/2/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/400/300/cats/3/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/150/cats/4/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/150/300/cats/5/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/300/cats/6/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/300/cats/7/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/200/300/cats/8/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/400/300/cats/9/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                    <label class="checkbox messagebar-sheet-image" style="background-image:url(http://lorempixel.com/300/150/cats/10/)">
+                      <input type="checkbox">
+                      <i class="icon icon-checkbox"></i>
+                    </label>
+                    
+                  </div>
+                
+              </div>
+              
+              <div class="page-content messages-content">
+                <div class="messages">
+                  <div class="messages-title"><b>Sunday, Feb 9,</b> 12:58</div>
+                  <div class="message message-sent">
+                    <div class="message-content">
+                      <div class="message-bubble">
+                        <div class="message-text">Hi, Kate</div>
                       </div>
                     </div>
                   </div>
+                  <div class="message message-sent">
+                    <div class="message-content">
+                      <div class="message-bubble">
+                        <div class="message-text">How are you?</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="message message-received">
+                    <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/9)"></div>
+                    <div class="message-content">
+                      <div class="message-name">Kate</div>
+                      <div class="message-bubble">
+                        <div class="message-text">Hi, I am good!</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="message message-received">
+                    <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/7)"></div>
+                    <div class="message-content">
+                      <div class="message-name">Blue Ninja</div>
+                      <div class="message-bubble">
+                        <div class="message-text">Hi there, I am also fine, thanks! And how are you?</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="message message-sent">
+                    <div class="message-content">
+                      <div class="message-bubble">
+                        <div class="message-text">Hey, Blue Ninja! Glad to see you ;)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="message message-sent">
+                    <div class="message-content">
+                      <div class="message-bubble">
+                        <div class="message-text">Hey, look, cutest kitten ever!</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="message message-received">
+                    <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/9)"></div>
+                    <div class="message-content">
+                      <div class="message-name">Kate</div>
+                      <div class="message-bubble">
+                        <div class="message-text">Nice!</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="message message-received">
+                    <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/9)"></div>
+                    <div class="message-content">
+                      <div class="message-name">Kate</div>
+                      <div class="message-bubble">
+                        <div class="message-text">Like it very much!</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="message message-received">
+                    <div class="message-avatar" style="background-image:url(http://lorempixel.com/100/100/people/7)"></div>
+                    <div class="message-content">
+                      <div class="message-name">Blue Ninja</div>
+                      <div class="message-bubble">
+                        <div class="message-text">Awesome!</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              -->
             </div>
             <div id="tab-3" class="page-content tab">
            
-                  <div class="card demo-card-header-pic">
-                      <div style="background-image:url('assets/games/Brand_airpor MKT_2.jpg')" valign="bottom" class="card-header">
-                         <h2>Jumping Challenge</h2>
-                      </div>
-                   </div>
-                   <div class="card demo-card-header-pic">
-                      <div style="background-image:url('assets/games/Brand_airpor MKT_3.jpg')" valign="bottom" class="card-header">
-                         <h2>Search the treasure</h2>
-                      </div>
-                   </div>
-                   <div class="card demo-card-header-pic">
-                      <div style="background-image:url('assets/games/Brand_airpor MKT_4.jpg')" valign="bottom" class="card-header">
-                         <h2>Funny picture</h2>
-                      </div>
-                   </div>
-                   <div class="card demo-card-header-pic">
-                      <div style="background-image:url('assets/games/Brand_airpor MKT.jpg')" valign="bottom" class="card-header">
-                         <h2>Boomerang story</h2>
-                      </div>
-                   </div>
-                   <div class="card demo-card-header-pic">
-                      <div style="background-image:url('assets/games/Fotomaton.jpg')" valign="bottom" class="card-header">
-                         <h2>Picture with us</h2>
-                      </div>
-                   </div>
+            <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/games/Brand_airpor MKT_2.jpg')" valign="bottom" class="card-header">
+                    <h2>Jumping Challenge</h2>
+                </div>
+              </div>
+              <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/games/Brand_airpor MKT_3.jpg')" valign="bottom" class="card-header">
+                    <h2>Search the treasure</h2>
+                </div>
+              </div>
+              <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/games/Brand_airpor MKT_4.jpg')" valign="bottom" class="card-header">
+                    <h2>Funny picture</h2>
+                </div>
+              </div>
+              <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/games/Brand_airpor MKT.jpg')" valign="bottom" class="card-header">
+                    <h2>Boomerang story</h2>
+                </div>
+              </div>
+              <div class="card demo-card-header-pic">
+                <div style="background-image:url('assets/games/Fotomaton.jpg')" valign="bottom" class="card-header">
+                    <h2>Picture with us</h2>
+                </div>
+              </div>
             
             </div>
           </div>
@@ -272,12 +385,8 @@
     </div>
   </div>
   <script>
-      return {
-        methods: {
-          toggleToolbarPosition: function () {
-            this.$el.find('.toolbar, .tabbar').toggleClass('toolbar-bottom-md');
-          },
-        }
+      function sendMSG() {
+        $('.messages').append('<div class="message message-sent"><div class="message-content"><div class="message-bubble"><div class="message-text">'+$('#message-to-send').val()+'</div></div></div></div>');
       }
     </script>
   <script src="js/framework7/js/framework7.min.js"></script>

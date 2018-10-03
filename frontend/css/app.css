@@ -528,12 +528,80 @@ code {
   margin-top: 48px;
 }
 
-.md .navbar+.toolbar.tabbar-labels:not(.toolbar-bottom-md)~* .page-content, .md .navbar+.toolbar.tabbar-labels:not(.toolbar-bottom-md)~.page-content {
-  padding-top: 70px;
-}
 
 
 .md .toolbar.messagebar {
   position: absolute;
   background: #ffffff;
+}
+
+.login-screen-title img {
+  max-width: 300px;
+}
+
+.md .login-screen-content .list.buttons li .bbva-btn {
+  background: #072146;
+  padding: 5px 20px;
+  border-radius: 2px;
+  display: inline-block;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.md .login-screen-content .list.buttons li .facebook-btn {
+  background: #3b5998;
+  padding: 5px 20px;
+  border-radius: 2px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.md .login-screen-content .list.buttons li {
+  text-align: center;
+}
+
+.airport select {
+  display: inline-block;
+  color: #ff9500;
+  padding-right: 20px;
+}
+
+.airport .f7-icons {
+  font-size: 12px;
+  color: #ff9500;
+  margin-left: -24px;
+  pointer-events: none;
+}
+
+.airport p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.navbar a i {
+  margin-top: -4px;
+}
+
+.md .navbar+.toolbar.tabbar-labels:not(.toolbar-bottom-md)~* .page-content .messages-content {
+  padding-top: 0px;
+}
+
+.md .list.people {
+  margin-top: 5px;
+}
+
+.md .list.people .item-media {
+  width: 26px;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.md .list.people .item-media img:not(.heightfit) {
+  width: 100%;
+}
+
+.md .list.people .item-media img.heightfit {
+  height: 100%;
 }
