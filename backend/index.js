@@ -24,5 +24,5 @@ app.get('/bbva-login', function (req, res) {
   return res.redirect('https://connect.bbva.com/sandboxconnect?client_id=app.bbva.air.exp&response_type=code&redirect_uri=https://airportx-hackathon.firebaseapp.com');
 })
 
-
-app.listen(3000);
+// Default port 30000
+app.listen(process.env.PORT || 3000);
